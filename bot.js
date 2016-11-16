@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;botRegexJoe = /^\/cry joe/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/payouts/; botRegexBye = /^\/offseason/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexEat = /^\/eat/; botRegexSh = /^\/oh/; botRegexCC = /^\/touchdown/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexGuidelines = /^\/guidelines/; botRegexBleach = /^\/bleach/;  botRegexCommands = /^\/commands/;  botRegexLoser = /^\/loser/; botRegexWr = /^\/wrong/; botRegexBu = /^\/build/;  botRegexGG = /^\/mike/;botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexGuidelines = /^\/guidelines/; botRegexBleach = /^\/bleach/;  botRegexCommands = /^\/commands/;  botRegexLoser = /^\/loser/; botRegexWr = /^\/wrong/; botRegexBu = /^\/build/;  botRegexGG = /^\/mike/; botRegexTrade = /^\/trades/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -147,6 +147,11 @@ this.res.end();
         else if(request.text && botRegexGG.test(request.text)) {
 this.res.writeHead(200);
 postMessage("https://i.kinja-img.com/gawker-media/image/upload/mjvi0ol0s5i3c6ikolql.jpg");
+this.res.end();
+}
+         else if(request.text && botRegexTrade.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://i.groupme.com/895x598.png.0b9c5de1fcfe4645b6f2d94d9695346f");
 this.res.end();
 }
   else if(request.text && botRegexCheese.test(request.text)) {
