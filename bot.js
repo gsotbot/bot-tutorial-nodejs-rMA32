@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;botRegexJoe = /^\/cry joe/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/payouts/; botRegexBye = /^\/offseason/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexEat = /^\/eat/; botRegexSh = /^\/oh/; botRegexCC = /^\/touchdown/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexGuidelines = /^\/guidelines/; botRegexBleach = /^\/bleach/;  botRegexCommands = /^\/commands/;  botRegexLoser = /^\/loser/; botRegexWr = /^\/wrong/; botRegexBu = /^\/build/; botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexGuidelines = /^\/guidelines/; botRegexBleach = /^\/bleach/;  botRegexCommands = /^\/commands/;  botRegexLoser = /^\/loser/; botRegexWr = /^\/wrong/; botRegexBu = /^\/build/;  botRegexGG = /^\/mike/;botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -121,7 +121,7 @@ this.res.end();
 }
   else if(request.text && botRegexCommands.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/261x568.png.e2a59304c79743428981c85c887cb6e9");
+postMessage("https://i.groupme.com/237x597.png.5f8fb83a4ac249a3bf25910fc4d77af7");
 this.res.end();
 }
     else if(request.text && botRegexLoser.test(request.text)) {
@@ -142,6 +142,11 @@ this.res.end();
       else if(request.text && botRegexBu.test(request.text)) {
 this.res.writeHead(200);
 postMessage("https://i.groupme.com/450x450.gif.27c04b1f80eb4ad5a4fbca4c14ccd677");
+this.res.end();
+}
+        else if(request.text && botRegexGG.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://i.kinja-img.com/gawker-media/image/upload/mjvi0ol0s5i3c6ikolql.jpg");
 this.res.end();
 }
   else if(request.text && botRegexCheese.test(request.text)) {
