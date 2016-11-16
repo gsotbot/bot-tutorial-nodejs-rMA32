@@ -151,7 +151,7 @@ this.res.end();
 }
          else if(request.text && botRegexTrade.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/895x598.png.0b9c5de1fcfe4645b6f2d94d9695346f");
+postMessage("https://i.groupme.com/1328x1123.jpeg.59e77350d0dd46c6925e7bf365f44a36");
 this.res.end();
 }
   else if(request.text && botRegexCheese.test(request.text)) {
