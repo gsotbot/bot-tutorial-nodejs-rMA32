@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;botRegexJoe = /^\/cry joe/;
-      botRegexAd=/^\/advance/;botRegexMI = /^\/payouts/; botRegexBye = /^\/offseason/; botDuck = /^\/duck/;
+      botRegexAd=/^\/advance/; botRegexBye = /^\/offseason/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexEat = /^\/eat/; botRegexSh = /^\/oh/; botRegexCC = /^\/touchdown/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
       botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexGuidelines = /^\/guidelines/; botRegexBleach = /^\/bleach/;  botRegexCommands = /^\/commands/;  botRegexLoser = /^\/loser/; botRegexWr = /^\/wrong/; botRegexBu = /^\/build/;  botRegexGG = /^\/mike/; botRegexTrade = /^\/trades/;botRegexInjury = /^\/injury/;botRegexPayouts = /^\/payouts/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
@@ -32,11 +32,6 @@ function respond() {
   else if(request.text && botRegexJoe.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/1620x2160.jpeg.f8db8bc8222e404d9813750ca22a1d0f");
-    this.res.end();
-  } 
-  else if(request.text && botRegexMI.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1367x594.jpeg.d8fa9172d1544a5186037f334a50430c");
     this.res.end();
   } 
   else if(request.text && botRegexTw.test(request.text)) {
